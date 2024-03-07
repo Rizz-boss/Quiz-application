@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Registration - Lumen et Veritas Quiz</title>
+    <link rel="stylesheet" href="reg.css">
+<body>
+    <header>
+        <h1>Lumen et Veritas Quiz Competition</h1>
+    </header>
+    <main>
+        <section id="registrationDeadlineSection">
+            <h2>Registration Deadline</h2>
+            <p>The registration deadline is <span id="registrationDeadline"></span>.</p>
+            <p>Please register before the deadline to avoid late fees.</p>
+        </section>
+        <section id="registrationSection">
+            <h2>School Registration</h2>
+            <div id="errorMessage" style="color: red;"></div>
+            <form id="registrationForm">
+                <label for="regSchoolName">School Name:</label>
+                <input type="text" id="regSchoolName" name="regSchoolName"><br>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="regPassword"><br>
+                <label for="regCandidateNames">Candidate Names:</label>
+                <textarea id="regCandidateNames" name="regCandidateNames"></textarea><br>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            </form>
+            
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Lumen et Veritas International Academy</p>
+    </footer>
+    <script src="registration.js"></script>
+</body>
+</html>

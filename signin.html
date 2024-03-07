@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Sign-in - Lumen et Veritas Quiz</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <header>
+        <h1>Lumen et Veritas Quiz Competition</h1>
+    </header>
+    <main>
+        <section id="signInSection">
+            <h2>School Sign-in</h2>
+            <form id="signInForm">
+                <div id="signInErrorMessage" style="color: red;"></div> 
+                <div id="signInSuccessMessage"></div>
+                <label for="signInSchoolName">School Name:</label>
+                <input type="text" id="signInSchoolName" name="signInSchoolName" ><br>
+                <label for="signInPassword">Password:</label>
+                <input type="password" id="signInPassword" name="signInPassword" ><br>
+                <button type="submit" id="signInBtn">Sign In</button>
+                <p>Don't have an account? <a href="index.html">Sign Up</a></p>
+                
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Lumen et Veritas International Academy</p>
+    </footer>
+
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Quiz Instructions</h2>
+            <div class="modal-body">
+                <p>Welcome to the <strong>Lumen et Veritas Quiz Competition</strong>!</p>
+                <p>You will be presented with a total of <strong>10 questions</strong>.</p>
+                <p>You have <strong>2 minutes</strong> to answer all the questions.</p>
+                <p>Your scores will be summed up and shown to you in <strong>percentage</strong> at the end of the test.</p>
+                <p>Good luck!</p>
+            </div>
+            <button id="startQuizBtn" class="start-quiz-btn">Start Quiz</button>
+            
+        </div>
+    </div>
+    
+    
+    <script src="signin.js"></script>
+</body>
+</html>
